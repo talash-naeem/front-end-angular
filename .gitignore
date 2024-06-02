@@ -7,3 +7,4 @@ tsconfig.spec.json
 tslint.json
 angular.json
 .angular
+environments
