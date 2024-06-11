@@ -12,7 +12,9 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 import { Route, RouterModule, Routes } from '@angular/router';
 import { ProductCategoryMenuComponent } from './components/product-category-menu/product-category-menu.component';
 import { SearchComponent } from './components/search/search.component';
+import { ProductDetialsComponent } from './components/product-detials/product-detials.component';
 const routes: Routes = [
+  {path: 'products/:id', component: ProductDetialsComponent},
   {path: 'search/:keyword', component: ProductListComponent},
   {path: 'cotegory/:id', component: ProductListComponent},
   {path: 'cotegory', component: ProductListComponent},
@@ -29,7 +31,8 @@ const routes: Routes = [
     FooterComponent,
     SideBarComponent,
     ProductCategoryMenuComponent,
-    SearchComponent
+    SearchComponent,
+    ProductDetialsComponent
   ],
   imports: [
     BrowserModule,
