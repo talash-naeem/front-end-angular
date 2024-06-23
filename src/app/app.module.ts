@@ -45,6 +45,8 @@ const routes: Routes = [
     CartStatusComponent,
     CartDetailsComponent,
     CheckoutComponent,
+    SideBarComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
